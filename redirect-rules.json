@@ -20,6 +20,15 @@
         "HostName": "jcunanan05samplesite.com.s3-website-us-east-1.amazonaws.com",
         "ReplaceKeyPrefixWith": "page-2/survey"
       }
+    },
+    {
+      "Condition": {
+        "KeyPrefixEquals": "PaGE-2/Survey"
+      },
+      "Redirect": {
+        "HostName": "jcunanan05samplesite.com.s3-website-us-east-1.amazonaws.com",
+        "ReplaceKeyPrefixWith": "page-2/survey"
+      }
     }
   ]
 }
