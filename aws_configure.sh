@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+pip install --upgrade pip
+pip install --user awscli
 
 mkdir -p ~/.aws
 
