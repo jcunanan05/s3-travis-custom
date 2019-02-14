@@ -6,8 +6,6 @@ cache:
     - node_modules
 before_deploy:
   - pip install awscli --upgrade --user
-  - chmod +x ./aws_configure.sh
-  - ./aws_configure.sh
 deploy:
   provider: script
   script: aws s3 cp dist/ s3://$S3_BUCKET_NAME --recursive --region=us-east-1
