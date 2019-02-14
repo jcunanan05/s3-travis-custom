@@ -5,8 +5,8 @@ cache:
   directories:
     - node_modules
 before_deploy:
-  script:
-    - ./aws_configure.sh
+  - chmod +x ./aws_configure.sh
+  - ./aws_configure.sh
 deploy:
   provider: script
   script: npm run deploy
