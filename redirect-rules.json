@@ -1,0 +1,13 @@
+{
+  "RoutingRules": [
+    {
+      "Condition": {
+        "KeyPrefixEquals": "Page-2"
+      },
+      "Redirect": {
+        "HostName": "jcunanan05samplesite.com.s3-website-us-east-1.amazonaws.com",
+        "ReplaceKeyPrefixWith": "page-2"
+      }
+    }
+  ]
+}

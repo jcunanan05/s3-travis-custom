@@ -1,0 +1,22 @@
+{
+  "name": "custom-s3-travis",
+  "version": "0.0.1",
+  "description": "custom automation with travis including redirect rules",
+  "main": "dist/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jcunanan05/s3-travis-custom.git"
+  },
+  "keywords": [
+    "automation"
+  ],
+  "author": "Jonathan Cunanan <j_cunanan05@yahoo.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcunanan05/s3-travis-custom/issues"
+  },
+  "homepage": "https://github.com/jcunanan05/s3-travis-custom#readme"
+}

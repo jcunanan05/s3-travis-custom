@@ -1,0 +1,29 @@
+<RoutingRules>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>Page-2</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <HostName>jcunanan05samplesite.com.s3-website-us-east-1.amazonaws.com</HostName>
+      <ReplaceKeyPrefixWith>page-2</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>PAGE-2</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <HostName>jcunanan05samplesite.com.s3-website-us-east-1.amazonaws.com</HostName>
+      <ReplaceKeyPrefixWith>page-2</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>PaGE-2</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <HostName>jcunanan05samplesite.com.s3-website-us-east-1.amazonaws.com</HostName>
+      <ReplaceKeyPrefixWith>page-2</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+</RoutingRules>
