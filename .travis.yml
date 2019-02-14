@@ -4,12 +4,12 @@ node_js:
 cache:
   directories:
     - node_modules
-before_deploy:
-  - chmod +x ./aws_configure.sh
-  - ./aws_configure.sh
 deploy:
   provider: script
-  script: npm run deploy
+  script:
+    - chmod +x ./aws_configure.sh
+    - ./aws_configure.sh
+    - npm run deploy
   skip_cleanup: true
   on:
     branch: master
