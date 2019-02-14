@@ -4,6 +4,7 @@
   "description": "custom automation with travis including redirect rules",
   "main": "dist/index.html",
   "scripts": {
+    "deploy": "aws s3 cp dist/ s3://$S3_BUCKET_NAME --recursive --region=us-east-1",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {

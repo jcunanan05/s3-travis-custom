@@ -1,3 +1,17 @@
 language: node_js
 node_js:
   - stable
+cache:
+  directories:
+    - node_modules
+before_deploy:
+  - pip install --user awscli
+  - ./aws_configure.sh
+deploy:
+  provider: script
+  script: npm run deploy
+  skip_cleanup: true
+  on:
+    branch: master
+after_deploy:
+  - echo "deploy is finished"
