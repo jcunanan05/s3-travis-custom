@@ -5,7 +5,7 @@ cache:
   directories:
     - node_modules
 before_deploy:
-  - pip install awscli
+  - pip3 install awscli --upgrade --user
   - chmod +x ./aws_configure.sh
   - ./aws_configure.sh
 deploy:
