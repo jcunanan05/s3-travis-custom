@@ -13,5 +13,5 @@ deploy:
   on:
     branch: master
 after_deploy:
-  - - aws s3api put-bucket-website --bucket $S3_BUCKET_NAME --website-configuration file://redirect-rules.json --region us-east-1
-  - echo "deploy is finished"
+  - chmod +x ./after_deploy.sh
+  - ./after_deploy.sh
